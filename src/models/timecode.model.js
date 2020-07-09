@@ -4,7 +4,7 @@ const TimeCodeSchema = new Schema({
   time: String,
 }, { collection: 'Timecodes' });
 
-TimeCodeSchema.methods.validTimeCode = (time) => time === this.time;
+TimeCodeSchema.methods.getTimeCode = (time) => time === this.time;
 
 const TimeCode = model('Timecode', TimeCodeSchema);
 
