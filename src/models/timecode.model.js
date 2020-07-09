@@ -5,9 +5,9 @@ const TimeCodeSchema = new Schema({
   endDate: Date,
 }, { collection: 'Timecodes' });
 
-TimeCodeSchema.methods.getTimeCode = function() {
+TimeCodeSchema.methods.getTimeCode = function () {
   return Math.floor((this.endDate - this.startDate) / 1000);
-}
+};
 
 const TimeCode = model('Timecode', TimeCodeSchema);
 
