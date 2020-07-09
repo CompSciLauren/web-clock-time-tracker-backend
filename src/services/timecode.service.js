@@ -1,6 +1,6 @@
 import TimeCode from '../models/timecode.model';
 
-exports.getTimeCode = async function (query) {
+exports.getTimeCode = async (query) {
   try {
     const timeCode = await TimeCode.find(query);
     return timeCode;
