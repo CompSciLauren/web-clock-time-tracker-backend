@@ -6,7 +6,7 @@ const passportConfig = (passport) => {
     done(null, user.id);
   });
 
-  passport.deseriallizeUser((id, done) => {
+  passport.deserializeUser((id, done) => {
     User.findById(id, (err, user) => {
       done(err, user);
     });
