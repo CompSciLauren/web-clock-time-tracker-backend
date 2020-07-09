@@ -1,5 +1,7 @@
 import { Schema, model } from 'mongoose';
 
+const mongoose = require('mongoose');
+
 const TimeCodeSchema = new Schema({
   _id: mongoose.Types.ObjectId(),
   description: String,
