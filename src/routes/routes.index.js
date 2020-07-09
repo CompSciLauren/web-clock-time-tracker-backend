@@ -1,6 +1,6 @@
 import root from './routes.root';
 import register from './routes.register';
-import timecode from './timecode.route.js';
+import timecode from './timecode.route';
 
 module.exports = (app) => {
   app.use('/register/', register);
