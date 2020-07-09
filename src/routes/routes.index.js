@@ -5,5 +5,5 @@ import timecode from './timecode.route';
 module.exports = (app) => {
   app.use('/register/', register);
   app.use('/api/', root);
-  app.use('/api/timecodes', timecode)
+  app.use('/api/timecodes', timecode);
 };
