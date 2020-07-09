@@ -1,16 +1,21 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import passport from 'passport';
+import LocalStrategy from 'passport-local';
 
 import addRoutes from './routes/routes.index';
 import dbConfig from './config/database';
-import passportConfig from './config/passport';
+import User from './models/user.model';
 
 mongoose.connect(dbConfig.url);
-passportConfig(passport);
 
 const app = express();
 app.use(passport.initialize());
+app.use(passport.session());
+
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 addRoutes(app);
 
