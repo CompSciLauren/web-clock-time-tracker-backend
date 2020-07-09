@@ -1,4 +1,4 @@
-const TimeCode = require('../models/timecode.model');
+import TimeCode from '../models/timecode.model';
 
 exports.getTimeCode = async function (query) {
   try {
