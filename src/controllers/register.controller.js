@@ -1,3 +1,3 @@
-const registerController = (req, res) => {
-  
-}
+// const registerController = (req, res) => {
+
+// };
