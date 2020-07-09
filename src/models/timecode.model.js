@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose';
 
 const TimeCodeSchema = new Schema({
-    time: String,
+  time: String,
 }, { collection: 'Timecodes' });
 
 TimeCodeSchema.methods.getTimeCode = (time) => time === this.time;
