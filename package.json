@@ -12,7 +12,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.9.22"
+    "mongoose": "^5.9.22",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
