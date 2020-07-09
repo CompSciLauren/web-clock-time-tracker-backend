@@ -1,6 +1,7 @@
 const express = require('express');
 
 const router = express.Router();
+const TimeCode = mongoose.model('TimeCode', TimeCodeSchema);
 
 const TimeCodeController = require('../controllers/timecode.controller');
 
