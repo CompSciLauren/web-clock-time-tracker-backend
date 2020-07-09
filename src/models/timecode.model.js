@@ -3,7 +3,7 @@ import { Schema, model } from 'mongoose';
 const mongoose = require('mongoose');
 
 const TimeCodeSchema = new Schema({
-  id: mongoose.Types.ObjectId(),
+  id: Schema.Types.ObjectId,
   description: String,
 });
 
