@@ -1,8 +1,8 @@
 import { Schema, model } from 'mongoose';
 
 const TimeCodeSchema = new Schema({
-  startDate: Date,
-  endDate: Date,
+  _id: mongoose.Types.ObjectId(),
+  description: String,
 }, { collection: 'Timecodes' });
 
 TimeCodeSchema.methods.getTimeCode = function () {

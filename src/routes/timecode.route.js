@@ -1,9 +1,8 @@
-const express = require('express');
+import express from 'express';
+import timeCodeController from '../controllers/timecode.controller';
 
 const router = express.Router();
 
-const TimeCodeController = require('../controllers/timecode.controller');
+router.post('/', timeCodeController);
 
-router.get('/', TimeCodeController.getTimeCode);
-
-module.exports = router;
+export default router;
