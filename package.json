@@ -11,7 +11,8 @@
   "author": "Eric McCullough <eric96@live.missouristate.edu>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.9.22"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
