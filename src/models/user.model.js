@@ -2,7 +2,7 @@ import { Schema, model } from 'mongoose';
 import passportLocalMongoose from 'passport-local-mongoose';
 
 const UserSchema = new Schema({
-  email: String,
+  username: String,
   password: String,
 });
 

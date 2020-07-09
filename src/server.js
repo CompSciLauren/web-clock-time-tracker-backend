@@ -1,4 +1,5 @@
 import express from 'express';
+import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import passport from 'passport';
 import LocalStrategy from 'passport-local';
@@ -10,6 +11,7 @@ import User from './models/user.model';
 mongoose.connect(dbConfig.url);
 
 const app = express();
+app.use(bodyParser());
 app.use(passport.initialize());
 app.use(passport.session());
 
