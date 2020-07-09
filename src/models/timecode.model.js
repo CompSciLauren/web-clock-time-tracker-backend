@@ -1,13 +1,11 @@
 import { Schema, model } from 'mongoose';
 
 const TimeCodeSchema = new Schema({
-  startTime: String,
-  endTime: String,
-});
+  time: String,
+}, { collection: 'Timecodes' });
 
-var TimeCode = mongoose.model('TimeCode', TimeCodeSchema);
-TimeCodeSchema.methods.getTimeCode = function() {
-  return this.endTime - this.startTime;
-}
+TimeCodeSchema.methods.getTimeCode = (time) => time === this.time;
+
+const TimeCode = model('Timecode', TimeCodeSchema);
 
 export default TimeCode;
