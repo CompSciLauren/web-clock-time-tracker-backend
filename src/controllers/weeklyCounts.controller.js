@@ -5,7 +5,6 @@ const weeklyCountsController = async (req, res) => {
   const currentDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const nextDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   nextDay.setDate(nextDay.getDate() + 1);
-  console.log(currentDay);
 
   const data = {};
   for (let i = now.getDay(); i >= 0; i -= 1) {
