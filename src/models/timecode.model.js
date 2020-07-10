@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose';
 
 const TimeCodeSchema = new Schema({
-  id: Schema.Types.ObjectId,
+  id: String,
   description: String,
 });
 
