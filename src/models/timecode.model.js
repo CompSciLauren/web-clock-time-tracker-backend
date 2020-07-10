@@ -5,10 +5,11 @@ const TimeCodeSchema = new Schema({
   description: String,
 });
 
+const TimeCode = model('Timecode', TimeCodeSchema);
+
 exports.createTimeCode = (timeCodeData) => {
   const timeCode = new TimeCode(timeCodeData);
   return timeCode.save();
 }
-const TimeCode = model('Timecode', TimeCodeSchema);
 
 export default TimeCode;
