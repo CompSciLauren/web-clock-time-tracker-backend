@@ -1,10 +1,9 @@
 import { Schema, model } from 'mongoose';
 
 const TimeCodeSchema = new Schema({
-  time: String,
-}, { collection: 'Timecodes' });
-
-TimeCodeSchema.methods.validTimeCode = (time) => time === this.time;
+  id: Schema.Types.ObjectId,
+  description: String,
+});
 
 const TimeCode = model('Timecode', TimeCodeSchema);
 
