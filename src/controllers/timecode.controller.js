@@ -2,7 +2,7 @@ import TimeCode from '../models/timecode.model';
 
 const timeCodeController = async (req, res) => {
   try {
-    const timeCode = new TimeCode({ id: req.body.id, description: res.body.description });
+    const timeCode = new TimeCode({ id: req.body.id, description: req.body.description });
     timeCode.save();
     res.status(200);
     res.send('Ok');
