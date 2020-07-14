@@ -1,2 +1,3 @@
-# express-mongoose-template
-Boiler plate for apis written with Node, Express, and Mongoose. 
+# Web Clock Time Tracker Backend
+
+The backend for [Web Clock Time Tracker](https://github.com/CompSciLauren/web-clock-time-tracker).
